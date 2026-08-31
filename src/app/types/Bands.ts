@@ -1,7 +1,9 @@
 export type Bands = {
+  id: string;
   name: string;
-  debut: number;
-  title: string;
+  debutDate: string;
+  mamberCount: number;
   member: string[];
-  image: string
+  image: string;
+  latesAlbun: string;
 };
