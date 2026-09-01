@@ -2,46 +2,49 @@ import { Bands } from "../types/Bands";
 
 export const Bandsdata: Bands[] = [
   {
-    id: "cocktail",
+    id: 1,
     name: "Cocktail",
-    debutDate: "24 ธันวาคม 2002", 
     member: [
-      "โอม - ปัณฑพล ประสารราชกิจ",
-      "เชาว์ - ชวรัตน์ หดสินทาย",
-      "ปาร์ค - เกริกเกียรติ สว่างวงศ์",
-      "ฟิลิปส์ - ฟิลิปส์ เปรมสิริกรณ์"
+      { name: "โอม (Ohm)", image: "/image/ohm.webp", position: "Vocal" },
+      { name: "เชาว์ (Chow)", image: "/image/chow.jpg", position: "Guitar" },
+      { name: "ปาร์ค (Park)", image: "/image/park.jpg", position: "Bass" },
+      { name: "ฟิลิปส์ (Philip)", image: "/image/phillip.jpg", position: "Drums" }
     ],
-    latestAlbum: "Yours Ever (2024)", 
-    image : "/image/cocktail.jpg",
-    imageAlbum: "/image/yourEver.webp"
+    debutDate: "ปี 2002",
+    memberCount: 4,
+    latestAlbum: "Yours Ever",
+    image: "/image/cocktail.jpg",
+    imageAlbum: "/image/cocktail.jpg"
   },
   {
-    id: "bts",
+    id: 2,
     name: "BTS",
-    debutDate: "13 มิถุนายน 2013",
     member: [
-      "RM (คิม นัมจุน)",
-      "Jin (คิม ซอกจิน)",
-      "Suga (มิน ยุนกิ)",
-      "J-Hope (จอง โฮซอก)",
-      "Jimin (ปาร์ค จีมิน)",
-      "V (คิม แทฮยอง)",
-      "Jungkook (จอน จองกุก)"
+      { name: "RM", image: "/image/rm.png", position: "Leader / Main Rapper" },
+      { name: "Jin", image: "/image/jin.png", position: "Sub Vocal / Visual" },
+      { name: "Suga", image: "/image/suga.webp", position: "Lead Rapper" },
+      { name: "J-Hope", image: "/image/jh.png", position: "Main Dancer / Sub Rapper" },
+      { name: "Jimin", image: "/image/jm.webp", position: "Main Dancer / Lead Vocal" },
+      { name: "V", image: "/image/v.webp", position: "Lead Dancer / Sub Vocal" },
+      { name: "Jungkook", image: "/image/jk.png", position: "Main Vocal / Lead Dancer" }
     ],
-    latestAlbum: "Arirang (2026)",
+    debutDate: "13 มิถุนายน 2013",
+    memberCount: 7,
+    latestAlbum: "Proof",
     image: "/image/bts.jpg",
-    imageAlbum:"/image/arirang.webp"
+    imageAlbum: "/image/arirang.webp"
   },
   {
-    id: "pixxie",
+    id: 3,
     name: "PiXXiE",
-    debutDate: "11 กุมภาพันธ์ 2021",
     member: [
-      "มาเบล - สุชาดา สอนพันธ์",
-      "พิมมา - พิมพ์มาดา ใจสักเสิน",
-      "อิงโกะ - อินท์ปาลี โชติหิรัญธนนนท์"
+      { name: "Mabel", image: "/image/mabel.jpg", position: "Lead Vocal / Visual" },
+      { name: "Pimma", image: "/image/pimma.jpg", position: "Main Rapper / Main Dancer" },
+      { name: "Ingkho", image: "/image/ingkho.jpg", position: "Main Vocal" }
     ],
-    latestAlbum: "rain (EP - 2023)",
+    debutDate: "11 กุมภาพันธ์ 2021",
+    memberCount: 3,
+    latestAlbum: "BLOOM",
     image: "/image/pixxie.webp",
     imageAlbum: "/image/pixxieRain.avif"
   }
