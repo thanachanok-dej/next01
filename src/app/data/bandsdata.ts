@@ -1,43 +1,48 @@
-export const Bandsdata = [
+import { Bands } from "../types/Bands";
+
+export const Bandsdata: Bands[] = [
   {
     id: "cocktail",
-    name: "Cocktail (ค็อกเทล)",
-    debutDate: "24 ธันวาคม 2002",
-    memberCount: 4,
-    members: [
-      "โอม - ปัณฑพล ประสารราชกิจ (ร้องนำ)",
-      "เชาว์ - ชวรัตน์ หดสินทาย (กีตาร์)",
-      "ปาร์ค - เกริกเกียรติ สว่างวงศ์ (เบส)",
-      "ฟิลิปส์ - ฟิลิปส์ เปรมสิริกรณ์ (กลอง)"
+    name: "Cocktail",
+    debutDate: "24 ธันวาคม 2002", 
+    member: [
+      "โอม - ปัณฑพล ประสารราชกิจ",
+      "เชาว์ - ชวรัตน์ หดสินทาย",
+      "ปาร์ค - เกริกเกียรติ สว่างวงศ์",
+      "ฟิลิปส์ - ฟิลิปส์ เปรมสิริกรณ์"
     ],
-    latestAlbum: "Yours Ever (2024) / Et'cetera (2026)"
+    latestAlbum: "Yours Ever (2024)", 
+    image : "/image/cocktail.jpg",
+    imageAlbum: "/image/yourEver.webp"
   },
   {
     id: "bts",
-    name: "BTS (บังทันโซนยอนดัน)",
+    name: "BTS",
     debutDate: "13 มิถุนายน 2013",
-    memberCount: 7,
-    members: [
-      "RM (คิม นัมจุน) - หัวหน้าวง / แร็ปเปอร์",
-      "Jin (คิม ซอกจิน) - นักร้อง",
-      "Suga (มิน ยุนกิ) - แร็ปเปอร์",
-      "J-Hope (จอง โฮซอก) - แร็ปเปอร์ / นักเต้นหลัก",
-      "Jimin (ปาร์ค จีมิน) - นักร้อง / นักเต้นหลัก",
-      "V (คิม แทฮยอง) - นักร้อง",
-      "Jungkook (จอน จองกุก) - นักร้องหลัก / นักเต้น"
+    member: [
+      "RM (คิม นัมจุน)",
+      "Jin (คิม ซอกจิน)",
+      "Suga (มิน ยุนกิ)",
+      "J-Hope (จอง โฮซอก)",
+      "Jimin (ปาร์ค จีมิน)",
+      "V (คิม แทฮยอง)",
+      "Jungkook (จอน จองกุก)"
     ],
-    latestAlbum: "ARIRANG (2026)"
+    latestAlbum: "Arirang (2026)",
+    image: "/image/bts.jpg",
+    imageAlbum:"/image/arirang.webp"
   },
   {
     id: "pixxie",
-    name: "PiXXiE (พิกซี่)",
+    name: "PiXXiE",
     debutDate: "11 กุมภาพันธ์ 2021",
-    memberCount: 3,
-    members: [
-      "Mabelz (มาเบล - สุชาดา สอนพันธ์)",
-      "Pimma (พิมมา - พิมพ์มาดา ใจสักเสิน)",
-      "Ingkho (อิงโกะ - อินท์ปาลี โชติหิรัญธนนนท์)"
+    member: [
+      "มาเบล - สุชาดา สอนพันธ์",
+      "พิมมา - พิมพ์มาดา ใจสักเสิน",
+      "อิงโกะ - อินท์ปาลี โชติหิรัญธนนนท์"
     ],
-    latestAlbum: "rain (EP - 2023) / Bloom (Studio Album - 2022)"
+    latestAlbum: "rain (EP - 2023)",
+    image: "/image/pixxie.webp",
+    imageAlbum: "/image/pixxieRain.avif"
   }
 ];

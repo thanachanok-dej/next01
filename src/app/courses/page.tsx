@@ -4,12 +4,13 @@ import { Coursesdata } from "../data/coursesdata";
 export default function CoursesPage() {
   
   return (
-    <>
-      <div>
-        {Coursesdata.map((course , index) =>(
-          <CourseCard key={index} course={course} />
+    <main className="container">
+      <h1>รายการวิชา</h1>
+      <div className="courses-container">
+        {Coursesdata.map((course) => (
+          <CourseCard key={course.id} course={course} />
         ))}
       </div>
-    </>
+    </main>
   );
 }
