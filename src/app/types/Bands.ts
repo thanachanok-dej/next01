@@ -1,9 +1,16 @@
-export type Bands = {
-  id: string;
+export type Member = {
   name: string;
-  debutDate: string;
-  member: string[];
   image: string;
+  position: string; // เพิ่ม: ตำแหน่งในวง เช่น "Leader / Main Vocal"
+};
+
+export type Bands = {
+  id: number;
+  name: string;
+  member: Member[];
+  debutDate: string;
+  memberCount: number;
   latestAlbum: string;
-  imageAlbum: string;
+  image: string;
+  imageAlbum?: string;
 };
